@@ -1,0 +1,45 @@
+# === DEPENDENCIES ===
+node_modules/
+
+# === ENVIRONMENT VARIABLES ===
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# === LOG FILES ===
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# === RUNTIME FILES ===
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# === UPLOADS & TEMP FILES ===
+uploads/
+tmp/
+temp/
+
+# === BUILD OUTPUT ===
+dist/
+build/
+
+# === COVERAGE / TEST OUTPUT ===
+coverage/
+.nyc_output/
+
+# === IDE/EDITOR FILES ===
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# === SYSTEM FILES ===
+.DS_Store
+Thumbs.db
