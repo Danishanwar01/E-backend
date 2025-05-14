@@ -25,9 +25,17 @@ const path = require('path');
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 
+const userdataRouter = require('./routes/userdata');
+app.use('/api/userdata', userdataRouter);
+app.use('/api/userdata', require('./routes/userdata'));
+
+const ordersRouter = require('./routes/orders');
+app.use('/api/orders', ordersRouter);
+
 app.get('/', (req, res) => {
   res.send('Backend is running and MongoDB is connected!');
 });
+
 
 app.listen(5000, () => {
   console.log('Server is running on port 5000');
