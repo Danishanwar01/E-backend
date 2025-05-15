@@ -35,6 +35,10 @@ app.use('/api/orders', ordersRouter);
 const cartRouter   = require('./routes/cart');
 app.use('/api/cart', cartRouter);
 
+const adminRouter = require('./routes/admin');
+app.use('/api/admin', adminRouter);
+
+
 app.get('/', (req, res) => {
   res.send('Backend is running and MongoDB is connected!');
 });
