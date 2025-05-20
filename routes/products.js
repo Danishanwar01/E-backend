@@ -4,7 +4,7 @@ const multer  = require('multer');
 const path    = require('path');
 const fs      = require('fs');
 const Category = require('../models/Category');
-const Product  = require('../models/product');
+const Product  = require('../models/Product');
 const router  = express.Router();
 
 // 1)  uploads directory 

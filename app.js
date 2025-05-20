@@ -39,6 +39,9 @@ const adminRouter = require('./routes/admin');
 app.use('/api/admin', adminRouter);
 
 
+const reviewRouter = require('./routes/review');
+app.use('/api/products', reviewRouter);
+
 app.get('/', (req, res) => {
   res.send('Backend is running and MongoDB is connected!');
 });
