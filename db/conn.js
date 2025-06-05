@@ -10,6 +10,8 @@ dotenv.config();
 
 const mongoURI = process.env.MONGO_URI;
 
+//  const mongoURI = 'mongodb://127.0.0.1:27017/e-commerce';
+
 
 const options = {
   useNewUrlParser: true,
